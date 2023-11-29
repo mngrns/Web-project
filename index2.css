@@ -1,0 +1,13 @@
+body{
+  background: url(turu3.png);
+}
+* {box-sizing:border-box}
+h3 {text-align: center;}
+h2 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+img {text-align: center;}
+.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto }

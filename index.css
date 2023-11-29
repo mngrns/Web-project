@@ -1,0 +1,237 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  background-color: #262626;
+}
+body{
+  background-image: url(turu3.png);
+}
+li{
+  list-style: none;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+.navmenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.navbranding{
+  font-size: 2rem;
+}
+.navlink{
+  transition: 0.7s ease;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+@media(max-width: 768px){
+  .hamburger{
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg)}
+
+  .navmenu{
+      position: fixed;
+      left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color:white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item{
+     margin: 16px 0;}
+    .navmenu.active{
+      left: 0;
+    }
+    .fa-facebook{
+      background: #3B5998;
+      color: white;
+    }
+    .fa-youtube {
+      background: #bb0000;
+      color: white;
+    }
+    .blocktext {
+        margin-left: auto;
+        margin-right: auto;
+        width: 8em
+    }
+  @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Gabarito&family=Oswald&family=Roboto+Condensed:ital,wight@1,300;1,700&family=Roboto+Slab:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+  body{
+    background: url(turu3.png);
+  }
+  @font-face {
+      font-family: 'myFirstfont';
+      src: url('fonts/NightinTokyo.ttf');
+  }
+  div {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+  }
+
+  html {
+    height: 100%;
+    width: 100%;
+  }
+  * {box-sizing:border-box}
+
+  .slideshow-container {
+    max-width: 500%;
+    position: relative;
+    margin: auto;
+  }
+
+
+  .mySlides {
+    display: none;
+  }
+
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: white;
+  }
+
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+  h1 {
+    font-family: 'myFirstfont', cursive;
+    color: white;
+  }
+
+  p{
+    font-family: 'Gabarito', cursive;
+  }
+  h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  h1 {text-align: center;}
+  h2 {text-align: center;}
+  h3 {text-align: center;}
+  p {text-align: center;}
+  div {text-align: center;}
+  .slideshow img{
+      margin:0 auto;
+      width: 100%;
+      max-width: 1000px;
+      min-width: 600px;
+  }
+  .slideshow .slides{
+      display: block;
+      margin:0 auto;
+      max-width: 1000px;
+      max-height: 400px;
+      overflow:visible;
+  }
+  .displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
